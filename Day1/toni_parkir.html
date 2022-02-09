@@ -1,0 +1,20 @@
+<script>
+let kendaraan = prompt ("masukan jenis kendaraan : \n1. Motor \n2. Mobil")
+
+if (kendaraan == 1) {
+    let durasi = prompt ("durasi parkir:")
+    if ( 0 <= durasi && durasi <=2) {biaya = 3000}
+    else if (2 < durasi) {biaya = 3000 + (durasi - 2) * 1000 }
+    
+    if ( biaya >30000) {biaya = 30000}
+    alert (`biaya : ${biaya}`)}
+
+if (kendaraan == 2) { 
+    let durasi = prompt ("durasi parkir:")
+    if ( 0 <= durasi && durasi <=2) {biaya = 5000}
+    else if (2 < durasi) {biaya = 5000 + (durasi - 2) * 2000 }
+    
+    if ( biaya >50000) {biaya = 50000}
+    alert (`biaya : ${biaya}`)}
+
+</script>

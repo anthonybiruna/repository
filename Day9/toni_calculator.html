@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Mari Berhitung!</h1>
+  <h2>Hasil: <span id="hasil"></span></h2>
+  <input id="input1" type="number">
+  <input id="input2" type="number">
+  <br>
+  <br>
+  <button onclick="add()">Tambah</button>
+  <button onclick="subtract()">Kurang</button>
+  <button onclick="multiply()">Kali</button>
+  <button onclick="devide()">Bagi</button>
+
+  <script>
+    function add() {
+      let input1Value = document.getElementById("input1").value;
+      input1Value = parseInt(input1Value);
+
+      let input2Value = document.getElementById("input2").value;
+      input2Value = parseInt(input2Value);
+
+      document.getElementById("hasil").innerHTML = input1Value + input2Value
+    }
+    
+    function subtract() {
+      let input1Value = document.getElementById("input1").value;
+      input1Value = parseInt(input1Value);
+
+      let input2Value = document.getElementById("input2").value;
+      input2Value = parseInt(input2Value);
+
+      document.getElementById("hasil").innerHTML = input1Value - input2Value
+    }
+    function multiply() {
+      let input1Value = document.getElementById("input1").value;
+      input1Value = parseInt(input1Value);
+
+      let input2Value = document.getElementById("input2").value;
+      input2Value = parseInt(input2Value);
+
+      document.getElementById("hasil").innerHTML = input1Value * input2Value
+    }
+    function devide() {
+      let input1Value = document.getElementById("input1").value;
+      input1Value = parseInt(input1Value);
+
+      let input2Value = document.getElementById("input2").value;
+      input2Value = parseInt(input2Value);
+
+      document.getElementById("hasil").innerHTML = input1Value / input2Value
+    }
+
+
+  </script>
+</body>
+</html>
