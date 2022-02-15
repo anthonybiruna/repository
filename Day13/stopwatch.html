@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seconds: <span id="seconds">0</span></h1>
+    <h2>Minutes: <span id="minutes">0</span></h2>
+
+    <button onclick="startCounter()">Start Interval</button>
+    <button onclick="stopCounter()">stop interval</button>
+    <script>
+        let stopwatch
+
+        const startCounter = () => {
+            let seconds = 0
+            let minutes = 0
+            stopwatch = setInterval(() => {
+                seconds += 1
+                document.getElementById("seconds").innerHTML = seconds
+                document.getElementById("minutes").innerHTML = minutes
+            }, 1000)
+            
+            
+            
+
+        const stopCounter = () => {
+            clearInterval(stopwatch)
+        }
+    </script>
+
+</body>
+</html>

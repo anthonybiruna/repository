@@ -115,7 +115,7 @@
                 <button onclick="renderData()">Cancel</button>
               </td>
               <td>
-                <button onclick="saveEditData()">Save</button>
+                <button onclick="saveEditData(${idx})">Save</button>
               </td>
             </tr>
             `
@@ -193,7 +193,7 @@
         renderData();
       };
 
-      const saveEditData = () => {
+      const saveEditData = (editIdx) => {
         const fullNameInput = document.getElementById("editFullName").value;
         const occupationInput =
           document.getElementById("editOccupation").value;
